@@ -8,9 +8,10 @@
 </head>
 <body>
     <h3>Nhập năm</h3>
-    <input id="leapYear" type="text">
+    <input id="inputleapYear" type="text">
     <button type="button" onclick="leapYear()">Kiểm tra</button>
-    <script>
+    <p id="outputleapYear"></p>
+    <!-- <script>
         function leapYear() {
             let year = document.getElementById("leapYear").value;
             if (year % 4 == 0 && year % 100 != 0) {
@@ -21,19 +22,19 @@
                 alert(year + " không phải là năm nhuận.");
             }
         }
-    </script>
+    </script> -->
 
-    <!-- <script>
+    <script>
         function leapYear() {
-            let year = document.getElementById("leapYear").value;
+            let year = document.getElementById("inputleapYear").value;
             if (year % 4 == 0 && year % 100 != 0) {
-                document.getElementById("leapYear").innerHTML = year + " là năm nhuận.";
+                document.getElementById("outputleapYear").innerHTML = year + " là năm nhuận.";
             } else if (year % 400 == 0) {
-                document.getElementById("leapYear").innerHTML = year + " là năm nhuận.";
+                document.getElementById("outputleapYear").innerHTML = year + " là năm nhuận.";
             } else {
-                document.getElementById("leapYear").innerHTML = year + " không phải là năm nhuận.";
+                document.getElementById("outputleapYear").innerHTML = year + " không phải là năm nhuận.";
             }
         }
-    </script> -->
+    </script>
 </body>
 </html>
